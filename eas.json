@@ -11,7 +11,10 @@
       }
     },
     "staging": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      }
     },
     "production": {
       "node": "16.18.0"
