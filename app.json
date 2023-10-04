@@ -14,21 +14,6 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "build": {
-      "development": {
-        "developmentClient": true,
-        "distribution": "internal",
-        "ios": {
-          "simulator": true
-        }
-      },
-      "staging": {
-        "distribution": "internal"
-      },
-      "production": {
-        "node": "16.18.0"
-      }
-    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
