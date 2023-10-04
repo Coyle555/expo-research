@@ -1,7 +1,10 @@
-workflow_dispatch:
+name: 'Eas Build Staging'
+on:
+  workflow_dispatch:
     inputs:
       reason:
         description: 'Deploy to Staging'     
+        required: true
         default: 'Just testing things out.'
 jobs:
   build:
