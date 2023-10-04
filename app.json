@@ -14,16 +14,20 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.coyle5.cicd"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+    "build": {
+      "development": {
+        "developmentClient": true,
+        "distribution": "internal",
+        "ios": {
+          "simulator": true
+        }
       },
-      "package": "com.coyle5.cicd"
+      "staging": {
+        "distribution": "internal"
+      },
+      "production": {
+        "node": "16.18.0"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -32,6 +36,12 @@
       "eas": {
         "projectId": "5cab9181-8ddb-4f0f-9ecc-626fb1a618d5"
       }
+    },
+    "android": {
+      "package": "com.coyle5.cicd"
+    },
+    "ios": {
+      "bundleIdentifier": "com.coyle5.cicd"
     }
   }
 }
