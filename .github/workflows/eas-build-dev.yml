@@ -1,5 +1,8 @@
+name: 'Eas Build Dev'
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - main
 jobs:
