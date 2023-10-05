@@ -5,6 +5,8 @@ on:
       - closed
     branches:
       - main
+environment:
+        name: development
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,4 +30,4 @@ jobs:
         run: yarn install
 
       - name: 🚀 Build app
-        run: eas build --platform all --profile development --non-interactive
+        run: eas build --platform all APP_ENV=development --profile development --non-interactive
